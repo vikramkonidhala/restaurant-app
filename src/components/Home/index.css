@@ -1,0 +1,78 @@
+.food-app {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 12px;
+  box-shadow: 1px 1px 1px #bfbfbf;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cafe-name {
+  color: rgb(5, 5, 5);
+}
+
+.my-orders {
+  display: none;
+}
+@media (min-width: 768px) {
+  .my-orders {
+    display: inline-block;
+    color: rgb(5, 5, 5);
+    font-size: 18px;
+    padding-right: 10px;
+    font-weight: 500;
+    padding-top: 8px;
+  }
+}
+
+.cart {
+  display: flex;
+  align-items: flex-start;
+}
+
+.cart-icon {
+  height: 32px;
+  width: 32px;
+  margin-top: 5px;
+  margin: 0px;
+}
+
+.cart-count {
+  background-color: orangered;
+  border-radius: 15px;
+  padding: 0px 5px;
+  color: #ffffff;
+  font-weight: bold;
+  margin: 0px;
+}
+
+.menu-list {
+  display: flex;
+  list-style-type: none;
+  box-shadow: 1px 1px 1px #bfbfbf;
+  overflow-x: scroll;
+  white-space: nowrap;
+  padding-left: 10px;
+}
+
+@media (min-width: 768px) {
+  .menu-list {
+    overflow-x: hidden;
+  }
+}
+
+.food-items-list {
+  list-style-type: none;
+  width: 100%;
+  padding: 0px;
+}
